@@ -57,7 +57,7 @@ public class MockControladorREST {
                 .collect(Collectors.toList());
 
         MockInventario respuesta = new MockInventario();
-        respuesta.setSkip(skip);
+        respuesta.setSkip(0);
         respuesta.setLimit(limit>100 ?100:limit);
         respuesta.setProducts(productosFiltrados);
         respuesta.setTotal(productosFiltrados.size());
